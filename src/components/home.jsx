@@ -1,10 +1,10 @@
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Services from '../components/Services';
-import Footer from '../components/Footer';
-import Tech from "../components/TechStack";
-import MyProjects from "../components/MyProjects";
+import Header from './Header';
+import Hero from './Hero';
+import About from './About';
+import Services from './Services';
+import Footer from './Footer';
+import Tech from "./TechStack";
+import MyProjects from "./MyProjects";
 
 
 const Home = () => {
