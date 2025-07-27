@@ -94,7 +94,7 @@ const Header = () => {
 
       {/* Mobile Navbar */}
       <div className="flex sm:hidden justify-between items-center">
-        <div className="text-xl font-bold text-white">MyApp</div>
+        <div className="text-xl font-bold text-white">Ankit Kr.</div>
         <div className="flex items-center gap-3">
           <motion.button
             whileTap={{ rotate: 360 }}
