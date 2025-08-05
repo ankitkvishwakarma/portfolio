@@ -59,7 +59,7 @@ const Hero = () => {
           </button> */}
 
           <a
-            href="/Ankit_Resume.pdf"
+            href="https://drive.google.com/file/d/1akS901QYejbao8bF9lfPtEXFGoVQCDZP/view?usp=drive_link"
             download
             className="flex items-center justify-center gap-2 border border-yellow-400 px-6 py-3 rounded 
                        hover:bg-yellow-500 hover:text-black hover:scale-105 
