@@ -1,6 +1,6 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
 import Particles from "./Particles/Particles";
+import ProjectsSectionSwiper from "./ProjectsSectionSwiper";
 
 const MyProjects = () => {
   const projects = [
@@ -12,6 +12,21 @@ const MyProjects = () => {
       tags: ["Next.Js", "Tailwind CSS", "Firebase", "Voice Assistant"],
       demoUrl: "https://placement-cell-ai-interview.vercel.app/",
     },
+    
+    {
+      image: "/assests/greenbasket.jpg",
+      title: "GreenBasket E-commerce grocery Mangement system",
+      description: "GreenBasket E-commerce grocery Mangement system with Role-Base Authentication (User, Admin, Delivery)",
+      tags: ["Node.js", "MongoDB", "Cloudinary", "Multer"],
+      demoUrl: "https://greenbasket-lac.vercel.app/",
+    },
+     {
+      image: "/assests/Crm.jpg",
+      title: "Employee Mangement System",
+      description: "Live voice recording with download option.",
+      tags: ["Node.js", "MongoDB", "Cloudinary", "Multer"],
+      demoUrl: "https://crm-nu-cyan.vercel.app/admin/login",
+    },
     {
       image: "/assests/groccery.png",
       title: "Grocery Website",
@@ -21,55 +36,47 @@ const MyProjects = () => {
       demoUrl: "https://grocery-psi-blush.vercel.app/",
     },
     {
-      image: "/assests/Audio.jpg",
-      title: "Audio Recorder",
-      description: "Live voice recording with download option.",
-      tags: ["Node.js", "MongoDB", "Cloudinary", "Multer"],
-      demoUrl: "https://audio-record-silk.vercel.app/",
-    },
-    {
       image: "/assests/ecommerce.jpg",
       title: "E-commerce UI",
       description: "A UI design concept for an ecommerce fashion website.",
       tags: ["HTML", "CSS", "JavaScript"],
       demoUrl: "https://ecommercefashion-2024.netlify.app/",
     },
+    {
+      image: "/assests/Audio.jpg",
+      title: "Audio Recorder",
+      description: "Live voice recording with download option.",
+      tags: ["Node.js", "MongoDB", "Cloudinary", "Multer"],
+      demoUrl: "https://audio-record-silk.vercel.app/",
+    },
   ];
 
   return (
-    <div className="relative w-full min-h-screen overflow-hidden bg-black">
-      {/* Background Particles */}
+    <div className="relative w-full min-h-screen bg-black overflow-hidden">
+      {/* Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Particles
-          particleColors={["#ffffff", "#ffffff"]}
+          particleColors={["#ffffff"]}
           particleCount={200}
-          particleSpread={10}
           speed={0.1}
-          particleBaseSize={100}
-          moveParticlesOnHover={true}
-          alphaParticles={false}
-          disableRotation={false}
         />
       </div>
 
-      {/* Foreground content */}
-      <section className="relative z-10 py-20 px-4 sm:px-10 text-white">
-        {/* Animated Underline Heading */}
-        <div className="text-center mb-6 relative group w-fit mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold">My Featured Projects</h2>
-          <div className="h-[3px] w-0 bg-yellow-400 mt-2 mx-auto rounded-full transition-all duration-500 group-hover:w-full" />
-        </div>
+      {/* Content */}
+      <section
+        id="projects"
+        className="relative z-10 py-20 px-4 sm:px-10 text-white"
+      >
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+          My Featured Projects
+        </h2>
 
-        <p className="text-gray-400 text-center max-w-2xl mx-auto mb-10 text-sm sm:text-base">
+        <p className="text-gray-400 text-center max-w-2xl mx-auto mb-10">
           Real-world applications built with full-stack technology and responsive design.
         </p>
 
-        {/* Projects Layout */}
-        <div className="flex flex-wrap xl:flex-nowrap justify-center gap-6 xl:gap-10">
-          {projects.map((proj, i) => (
-            <ProjectCard key={i} {...proj} />
-          ))}
-        </div>
+        {/* ✅ SWIPER USED HERE */}
+        <ProjectsSectionSwiper projects={projects} />
       </section>
     </div>
   );

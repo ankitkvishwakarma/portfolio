@@ -2,3 +2,17 @@
 body{
     /* background-color: #47615C; */
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #3b82f6; /* blue */
+  top: 50%;
+}
+
+.swiper-button-prev {
+  left: 0px;
+}
+
+.swiper-button-next {
+  right: 0px;
+}

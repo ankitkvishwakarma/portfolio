@@ -41,12 +41,12 @@ const Hero = () => {
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
-          <button class="relative group cursor-pointer">
+          <button className="relative group cursor-pointer">
             <span
-              class="absolute -inset-1 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 ease-in-out transform"
+              className="absolute -inset-1 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 ease-in-out transform"
             ></span>
             <span
-              class="relative px-6 py-3 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none font-semibold text-slate-800"
+              className="relative px-6 py-3 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none font-semibold text-slate-800"
             >
              H!re Me
             </span>
