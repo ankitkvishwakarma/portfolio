@@ -23,7 +23,7 @@ const Home = () => {
       {showProjects && <MyProjects />}
 
       <Services />
-      <Resume />
+      {/* <Resume /> */}
       <Footer />
     </>
   );
